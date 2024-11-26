@@ -4,6 +4,8 @@ square.className = "square";
 const size = document.getElementById("slider");
 const showSize = document.getElementById("sizeText");
 
+showSize.textContent = "Grid size: " + size.value + "x" + size.value;
+
 function generateGrid(size) {
     const gridContainer = document.getElementById("grid-container");
     gridContainer.innerHTML = '';
